@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "my-codespace-exampe"
+name = "my-codespace-example"
 version = "0.1.0"
 description = ""
 authors = ["Christian Hueser <55481699+christianhueserhzdr@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "my_codespace_exampe"}]
+packages = [{include = "my_codespace_example"}]
 license = "AGPL-3.0-or-later"
 
 [tool.poetry.dependencies]
