@@ -1,6 +1,7 @@
 
 volumes:
   data-volume:
+  code-volume:
 
 services:
   db:
@@ -15,7 +16,7 @@ services:
     build: .
     command: python my_codespace_example/manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/code
+      - code-volume:/code
     ports:
       - "8000:8000"
     environment:
