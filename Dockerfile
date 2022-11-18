@@ -7,5 +7,8 @@ WORKDIR /code
 
 COPY . /code/
 
+RUN python3 -m venv .venv/
+RUN .venv/bin/activate
 RUN pip install poetry
 RUN poetry install
+

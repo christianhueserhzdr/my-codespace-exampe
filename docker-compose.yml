@@ -19,7 +19,7 @@ services:
       - django_network
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: poetry run python3 manage.py runserver 0.0.0.0:8000
     working_dir: /code/my_codespace_example/
     volumes:
       - code_volume:/code
