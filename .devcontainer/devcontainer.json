@@ -2,7 +2,8 @@
     "name": "Python 3",
     "dockerComposeFile": "../docker-compose.yml",
     "service": "web",
-  
+    "workspaceFolder": "/workspace",
+
     // Set *default* container specific settings.json values on container create.
     "settings": {
       //"terminal.integrated.shell.linux": "/bin/bash",
@@ -26,7 +27,7 @@
     ],
   
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    "forwardPorts": [8000],
+    "forwardPorts": [8000, 5432],
   
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "pip3 install --user -r requirements.txt",
