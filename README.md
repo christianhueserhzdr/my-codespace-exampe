@@ -1,1 +1,1 @@
-# my-codespace-exampe
+# my-codespace-example
