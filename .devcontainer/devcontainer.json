@@ -17,7 +17,10 @@
       }]
     },
   
-    "extensions": [],
+    "extensions": [
+      "mtxr.sqltools",
+      "mtxr.sqltools-driver-pg"
+    ],
   
     "forwardPorts": [8000, 5432]
     
