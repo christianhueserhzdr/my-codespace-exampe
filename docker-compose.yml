@@ -20,7 +20,7 @@ services:
   web:
     build: .
     volumes:
-      - code_volume:/code
+      - code_volume:/workspaces/my-codespace-example
     ports:
       - "8000:8000"
     environment:
