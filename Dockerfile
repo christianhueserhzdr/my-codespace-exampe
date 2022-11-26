@@ -1,9 +1,14 @@
 FROM python:3.11.0-bullseye
 
-COPY . /code/
+RUN mkdir -p /workspaces/my-codespace-example/
 
-WORKDIR /code/
+COPY . /workspaces/my-codespace-example/
 
+WORKDIR /workspaces/my-codespace-example/
+
+RUN python3 -m venv .venv/
+RUN . ./bin/activate
+RUN pip install -U pip
 RUN pip install poetry
 RUN poetry install
 
