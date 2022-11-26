@@ -28,7 +28,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - VIRTUAL_ENV=/workspaces/my-codespace-example/.venv
-      - PATH=$VIRTUAL_ENV/bin:$PATH
+      - PATH=/workspaces/my-codespace-example/.venv/bin:$PATH
     depends_on:
       - db
     networks:

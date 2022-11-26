@@ -3,15 +3,14 @@
     "dockerComposeFile": "../docker-compose.yml",
     "service": "web",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-    "runArgs": [ "--env-file", ".devcontainer/devcontainer.env" ],
 
     "containerEnv": {
       "VIRTUAL_ENV": "/workspaces/${localWorkspaceFolderBasename}/.venv",
-      "PATH": "$VIRTUAL_ENV/bin:$PATH"
+      "PATH": "/workspaces/${localWorkspaceFolderBasename}/.venv/bin:$PATH"
     },
     "remoteEnv": {
       "VIRTUAL_ENV": "/workspaces/${localWorkspaceFolderBasename}/.venv",
-      "PATH": "$VIRTUAL_ENV/bin:$PATH"
+      "PATH": "/workspaces/${localWorkspaceFolderBasename}/.venv/bin:$PATH"
     },
 
     "settings": {
