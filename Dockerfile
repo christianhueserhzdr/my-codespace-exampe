@@ -6,9 +6,12 @@ COPY . /workspaces/my-codespace-example/
 
 WORKDIR /workspaces/my-codespace-example/
 
-RUN python3 -m venv .venv/
-RUN . ./venv/bin/activate
+SHELL ["/bin/bash", "-c"]
+
 RUN pip install -U pip
+RUN pip install virtualenv 
+RUN python3 -m venv .venv/
+RUN source ./venv/bin/activate
 RUN pip install poetry
 RUN poetry install
 
