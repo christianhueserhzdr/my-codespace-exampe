@@ -3,6 +3,7 @@
     "dockerComposeFile": "../docker-compose.yml",
     "service": "web",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "runArgs": [ "--env-file", ".devcontainer/devcontainer.env" ],
 
     "containerEnv": {
       "VIRTUAL_ENV": "/workspaces/${localWorkspaceFolderBasename}/.venv",
