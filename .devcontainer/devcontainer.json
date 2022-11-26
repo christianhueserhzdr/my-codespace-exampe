@@ -10,7 +10,7 @@
     },
     "remoteEnv": {
       "VIRTUAL_ENV": "/workspaces/${localWorkspaceFolderBasename}/.venv",
-      "PATH": "/workspaces/${localWorkspaceFolderBasename}/.venv/bin:$PATH"
+      "PATH": "/workspaces/${localWorkspaceFolderBasename}/.venv/bin:${containerEnv:PATH}"
     },
 
     "settings": {
