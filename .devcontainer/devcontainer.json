@@ -5,8 +5,14 @@
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
     "containerEnv": {
-      "VIRTUAL_ENV": "/workspaces/${localWorkspaceFolderBasename}/.venv"
+      "VIRTUAL_ENV": "/workspaces/${localWorkspaceFolderBasename}/.venv",
+      "PATH": "$VIRTUAL_ENV/bin:$PATH"
     },
+    //"remoteEnv": {
+    //  "PATH": "${containerEnv:PATH}:/some/other/path",
+    //  "MY_REMOTE_VARIABLE": "some-other-value-here",
+    //  "MY_REMOTE_VARIABLE2": "${localEnv:SOME_LOCAL_VAR}"
+    //},
 
     "settings": {
       "sqltools.connections": [{
