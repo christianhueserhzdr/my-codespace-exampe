@@ -4,6 +4,10 @@
     "service": "web",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
+    "containerEnv": {
+      "VIRTUAL_ENV": "/workspaces/${localWorkspaceFolderBasename}/.venv"
+    },
+
     "settings": {
       "sqltools.connections": [{
         "name": "Container database",
