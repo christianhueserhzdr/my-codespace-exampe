@@ -23,9 +23,9 @@
       "mtxr.sqltools-driver-pg"
     ],
   
-    "forwardPorts": [8000, 5432]
+    "forwardPorts": [8000, 5432],
     
     // Use 'postCreateCommand' to run commands after the container is created.
-    //"postCreateCommand": "poetry run python3 manage.py runserver 0.0.0.0:8000" 
+    "postCreateCommand": "poetry run python3 my_codespace_example/manage.py runserver 0.0.0.0:8000" 
 }
 
