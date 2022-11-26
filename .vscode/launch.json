@@ -5,7 +5,7 @@
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/ma_codespace_example/manage.py",
+            "program": "${workspaceFolder}/my_codespace_example/manage.py",
             "args": [
                 "runserver",
                 "0.0.0.0:8000"
