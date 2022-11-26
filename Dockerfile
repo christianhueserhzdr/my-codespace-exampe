@@ -6,7 +6,7 @@ COPY . /workspaces/my-codespace-example/
 
 WORKDIR /workspaces/my-codespace-example/
 
-SHELL [ "bin/bash", "-c" ]
+SHELL [ "/bin/bash", "-c" ]
 
 RUN pip install -U pip
 ENV VIRTUAL_ENV=/workspaces/my-codespace-example/.venv
