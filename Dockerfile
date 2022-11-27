@@ -8,8 +8,8 @@ WORKDIR /workspaces/my-codespace-example/
 
 RUN pip install -U pip
 ENV VIRTUAL_ENV=/workspaces/my-codespace-example/.venv
-RUN python3 -m venv $VIRTUAL_ENV
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+RUN python3 -m venv ${VIRTUAL_ENV}
+ENV PATH="${VIRTUAL_ENV}/bin:${PATH}"
 RUN pip install poetry
 RUN poetry install
 
