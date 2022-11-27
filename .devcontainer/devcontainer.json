@@ -8,10 +8,10 @@
       "VIRTUAL_ENV": "/workspaces/${localWorkspaceFolderBasename}/.venv",
       "PATH": "/workspaces/${localWorkspaceFolderBasename}/.venv/bin:${localEnv:PATH}"
     },
-    "remoteEnv": {
-      "VIRTUAL_ENV": "${containerEnv:VIRTUAL_ENV}",
-      "PATH": "/workspaces/${localWorkspaceFolderBasename}/.venv/bin:${containerEnv:PATH}"
-    },
+    //"remoteEnv": {
+    //  "VIRTUAL_ENV": "${containerEnv:VIRTUAL_ENV}",
+    //  "PATH": "/workspaces/${localWorkspaceFolderBasename}/.venv/bin:${containerEnv:PATH}"
+    //},
 
     "settings": {
       "sqltools.connections": [{
